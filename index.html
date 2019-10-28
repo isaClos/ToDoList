@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Isabelle Closse">
+    <meta name="description" content="Une To Do List.">
+    <meta name="robots" content="all">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet" />
+
+
+
+
+</head>
+<body>
+
+    <div id="contain" class="container-fluid">
+
+        <div class="row">
+            <div class="col-md-6 offset-2">
+                <ul id="list1">
+                    <li> <input class ="inp" type="checkbox" checked aria-label="" /> Allez faire du sport</li>
+                    <li> <input class ="inp" type="checkbox"  aria-label="" /> Faire une liste</li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="addlist" class="header col-md-6 offset-2">
+                <input class="col-md-10" type="text" id="myInput" placeholder="Tâche à rajouter" aria-label="" />
+                <span  onclick="newElement()" class="addBtn col-md-2 "> Ajouter </span>
+            </div>
+        </div>
+    </div>
+
+   <div class="row cpt">
+       <div class="col-md-6 offset-2">
+           <div class="col-md-12" id="bip" ></div>
+           <div class="col-md-4 ">
+                <button onclick="start()">Start</button>
+                <button onclick="finish()">Stop</button>
+                <button onclick="initialize()">Reset</button>
+           </div>
+       </div>
+   </div>
+
+</body>
+<script src="main.js"></script>
+</html>
